@@ -52,14 +52,11 @@ After adding to environments this contents we should update angular.json file. W
 }
 ```
 
-We should add types to `src/tsconfig.app.json` as node:
+Finally, we can also update `package.json`'s scripts section to run this quickly as shown below:
 ``` json
-{
+"scripts": {
   ...
-  "compilerOptions": {
-    ...
-    "types": ["node"]
-  },
+  "start": "ng serve --hmr"
 }
 ```
 
